@@ -1,0 +1,445 @@
+body{
+	margin: 2px;
+	font-family: 'Lato', sans-serif;
+}
+.logo{
+	background-color: #2D139B;
+	text-align: left;
+	padding-top: 5px;
+	padding-bottom: 10px;
+	padding-left: 12px;
+	border-radius: 5px;
+	
+}
+.logo img{
+	width: 6.5%;
+	height: 5%;
+}
+
+.social{
+	left:25px;	
+	font-size: 23px;
+	position:absolute;
+	top:25px;
+	
+}
+.social h2{
+	margin-left: 120%;
+	margin-top: 0;
+	color:#18F3DD;
+}
+.social2{
+	left:10px;	
+	position:absolute;
+	top:7px;
+	
+}
+.social2 h2{
+	margin-left: 10px;
+	margin-top: 60px;
+	font-size: 15px;
+	color:#18F3DD;
+}
+
+.main-menu{
+	text-align: center;
+	position:absolute;
+	top:20px;
+	right: 30px;
+}
+.main-menu ul{
+	list-style: none;
+
+}
+.main-menu ul li{
+	display: inline-block;
+	margin: 5px 15px;
+}
+.main-menu ul li a{
+	color:#18F3DD;
+	font-weight: 700;
+	padding-left: 5PX;
+	padding-right: 5PX;
+	padding-bottom: 5px;
+	text-decoration: none;
+	transition: all 0.2s ease-in;
+
+}
+.main-menu ul li a:hover{
+	color:#8DABC2;
+	border-bottom: 2px solid #8DABC2;
+}
+.slider{
+
+}
+.slider img{
+	width: 90%;
+	
+	padding-bottom: 5%;
+	padding-left: 5%;
+}
+.main-header{
+		display: flex;
+		flex-direction: column;
+	}
+
+.container{/*raper o envoltura es el padre de las card*/
+	margin: 0 auto;
+	max-width: 1170px;/*con el max predefinimos q este sea el tope maximo de ancho*/
+	overflow: hidden;
+	/*realizamos cambios para poder organizar las card en el espacio usando el flex*/
+	/*display: flex;
+	justify-content: space-between;*/
+}
+.oferta-academica .container{/*padre */
+	display: flex;
+	justify-content: space-around;
+}
+
+.card{
+	border: none;
+	border-radius: 5px;
+	/*float: left;*/
+	overflow:hidden;
+	/*margin-left: 3%;*/
+	width:0%;	
+}
+
+.card-hero{
+	position: relative;
+}
+.card-hero img{
+	width: 50%;
+}
+
+.card-hero:hover .btn-card-show{
+	display: block;
+}
+.card-title{
+	text-align: justify;
+}
+.card-body{
+	left:380px;	
+	font-size: 15px;
+	position:absolute;
+	top:130%;
+
+}
+.card-body p{
+	text-align: justify;
+    width:30%;
+    float: left;
+    padding-left:0px;
+}
+.card-body2{
+	left:1000px;	
+	font-size: 15px;
+	position:absolute;
+	top:130%;
+
+}
+.card-body2 p{
+	text-align: justify;
+    width:75%;
+    float: left;
+    padding-left:0px;
+}
+/*USAMOS UN SEUDOELEMENTO: para la linea verde va añadido a una de las etiqueta puede aparecer antes o despues del contenido de la etoqueta*/
+.card-title::after {
+	content: '';
+	background-color:#1CA311;
+	display: block;
+	height: 1px;
+	margin: 0 auto; /*para centrar la linea*/
+	margin-top: 3px;
+	width: 70%;
+}
+/*------------------*/
+.card-list{
+border-color: #999999;
+list-style: none;
+text-align: justify;
+padding-left: 0;
+}
+.oferta-academica .container{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		padding: 0 15px;
+	}
+	.card{
+		width: 45%;
+		box-sizing: border-box;
+		margin-bottom: 20px;
+	}
+	.contact .container{
+		display: flex;
+		flex-direction: column;
+	}
+
+
+
+	.footer{
+	background-color:#2D139B;
+	border-radius: 5px;
+	font-size: 12px;
+	color:#18F3DD;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	text-align:center;
+	margin-top: 20px;
+  }
+
+  .buscador{
+  	display: flex;
+	flex-direction: column;
+	/* arr iz dere abajo*/
+	padding: 10px 40% 40px;
+	width: 50%;
+
+  }
+  .buscador input[type="text"]{
+	display: block;
+  }
+  }
+  .form-buscador{
+  	border:2px solid #ccc;
+	border-radius: 5px;
+	font-size: 16px;
+	width: 100%;
+	height: 40%;
+	/*arr dere abaj iz*/
+	margin: 7px 0;
+	padding: 10px 0;
+  }
+  .buscador input{
+  	height: 20px;
+  	width: 100%;
+  }
+
+/*--------------------------------*/
+.menu{
+	width: 200px;
+	margin-top: 5px;	
+}
+.menu h2{
+	text-align:center;
+}
+.menu ul{
+	list-style: none;
+}
+.menu ul li{
+	margin-top: 15px;
+	font-family: 
+	font-size:18px;
+	background-color:#2D139B;
+	color:white;
+	width: 160px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border-radius: 0px 10px 10px 0px;
+	padding-left: 20px;
+	box-shadow: 5px 0px 10px #18F3DD;
+	-webkit-transition:padding-left 0.6s;
+}
+.menu ul li:hover{
+	padding-left: 50px;
+}
+/*-----------------*/
+.producto1{
+	border: none;
+	border-radius: 5px;
+	float: right;
+	/*overflow:hidden;*/
+	margin-left: 18%;
+	width:10%;
+
+}
+.prod_hero{
+	position: relative;
+
+}
+tam{
+	width: 20px;
+	height: 10px;
+}
+
+.cuerpocentral {
+	background:white;
+	margin:0 auto;
+	width:80%;
+	display:inline-block;
+
+ }
+.container .carrito,#logo1,#logo2,#logo3{
+	display:inline-block;
+	margin: 5px;
+	width:32%;
+	vertical-align:top;
+	background:white;
+	text-align:center;
+	
+
+}
+.container #logo1,#logo3{
+	vertical-align:middle;
+	text-align: center;
+}
+.container #logo1 img{
+	width: 50%;
+	text-align: center;
+	margin-left: 30px;
+	margin-bottom: 10px;
+	float:center;
+	
+}
+.container #logo1,#logo2,#logo3 p{
+	font-size: 10px;
+	text-align: center;
+}
+.container #logo2 img{
+	width: 50%;
+	text-align: center;
+	margin-left: 30px;
+	margin-bottom: 10px;
+	float:center;	
+}
+.container #logo3 img{
+	width: 40%;
+	text-align: center;
+	margin-left: 30px;
+	margin-bottom: 10px;
+	float:center;
+}
+.container .carrito img{
+	width: 20%;
+	text-align: center;
+	margin-left: 30px;
+	margin-bottom: 10px;
+	float:center;
+}
+.container #logo1,#logo2,#logo3 a{
+	font-size: 10px;
+	text-align: center
+	color:red;
+}
+
+contact{/*padre*/
+
+}
+
+
+.title-contact{
+	background-color: white;
+	color:#1E04A8;
+	text-align: center;
+}
+.img-contact{
+	margin: 0;
+}
+.img-contact img{
+	text-align: center;
+	padding-left: 100px;
+	width: 80%;
+}
+.contact-form{
+	display:inline-block;
+	
+	flex-direction: column;
+	/* arr iz dere abajo*/
+	padding: 0px 260px 30px;
+
+	width: 50%;
+}
+.contact-form input[type="text"]{
+	display: block;
+
+}
+
+label {
+    display:block;
+    margin-top:20px;
+    letter-spacing:1px;
+}
+input, textarea {
+    width:600px;
+    height:27px;
+    background:white;
+    border:1px solid black;
+    padding:10px;
+    margin-top:5px;
+    font-size:10px;
+    color:#ffffff;
+}
+ 
+textarea {
+    height:150px;
+}
+#submit {
+    width:85px;
+    height:35px;
+    border:none;
+    margin-top:20px;
+    cursor:pointer;
+}
+.title-section{	
+	font-size: 30px;
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 10px;
+
+}
+.form-control{
+	border:1px solid #ccc;
+	border-radius: 5px;
+	font-size: 16px;
+	width: 100%;
+	/*arr dere abaj iz*/
+	margin: 7px 0;
+	padding: 10px 0;
+}
+/*+++++++++++++++++++++++*/
+@media screen and (max-width: 768px){
+	body{
+		background-color: blue;
+	}
+	.main-header{
+		display: flex;
+		flex-direction: column;
+	}
+	.logo{
+		order: 2;
+	}
+	.social{
+		left:25px;	
+		font-size: 23px;
+		position:absolute;
+		top:25px;
+	}
+	.main-menu{
+		order: 3;
+	}
+	.main-menu ul li{
+		display: block;
+		padding-bottom: 5px;
+	}
+	.slider img{
+		width: 100%;
+	}
+	.oferta-academica .container{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		padding: 0 15px;
+	}
+	.card{
+		width: 45%;
+		box-sizing: border-box;
+		margin-bottom: 20px;
+	}
+	.contact .container{
+		display: flex;
+		flex-direction: column;
+	}
+}
+
